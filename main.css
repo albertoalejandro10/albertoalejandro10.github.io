@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans';
+    background-color: rgb(103, 75, 177);
+}
+
+.fondo{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+.title{
+    display: inline-block;
+    margin: 40px 0px 0px 60px;
+}
+
+.logo-huddle{
+    width: 200px;
+}
+
+.main{
+    margin-top: 44px;
+    display: flex;
+}
+
+.right{
+    padding-top: 30px;
+    color: #FEFBFF;
+    width: 40%;
+}
+
+.right h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.right p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.right button{
+    margin-top: 30px;
+    display: block;
+    font-weight: 600;
+    width: 28%;
+    padding: 12px 0px;
+    background: #FFFF;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.right a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.left{
+    margin-left: 60px;
+    width: 50%;
+}
+
+.left img{
+    position: relative;
+    bottom: -8px;
+}
+
+.social{
+    display: flex;
+    position: relative;
+    right: 140px;
+    bottom: -20px;
+    font-size: 20px;
+    color: #FEFBFF;
+}
+
+.social li{
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    width: 24px;
+    padding: 2px 2px;
+    border: 1px solid #FEFBFF;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 375px){
+    .title{
+        margin: initial;
+        margin: 30px 0 0 30px;
+    }
+    .logo-huddle{
+        width: 50%;
+    }
+    .main{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .left{
+        margin: auto;
+        width: 82%;
+    }
+    .left img{
+        position: initial;
+        width: 100%;
+    }
+    .right{
+        padding-top: 60px;
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+    .right h1{
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .right p{
+        margin-top: 16px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 24px;
+    }
+    .right button{
+        margin: auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+    footer{
+        margin: 60px 0 40px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .social{
+        position: initial;
+    }
+    .fondo{
+        display: none;
+    }
+    .fondo-mobile{
+        display: block;
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+        height: 62vh;
+    }
+}
